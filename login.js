@@ -7,7 +7,7 @@ document.querySelector("#connection").addEventListener("click", function () {
   };
   console.log(user);
 
-  fetch("http://localhost:3000/users/signin", {
+  fetch("https://front-weather.vercel.app/users/signin", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(user),
@@ -29,7 +29,7 @@ document.querySelector("#register").addEventListener("click", function () {
     password: document.querySelector("#registerPassword").value,
   };
 
-  fetch("http://localhost:3000/users/signup", {
+  fetch("https://front-weather.vercel.app/users/signup", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(user),
